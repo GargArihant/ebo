@@ -35,7 +35,7 @@ div.cart {
 }
 
 div.cart p {
-    margin-left: 1.2em;
+    margin: 2px;;
 }
 div.cart p span{
     font-family: 'Roboto';
@@ -628,3 +628,134 @@ padding-top: 8px;
 div.bill div:last-of-type b,img {
     margin : 3px;
 }
+@media screen and (max-width: 1025px) {
+    #left_arrow {
+        margin-top: 9px;
+    width: 13px;
+    height: 13px;
+    cursor: pointer;
+    }
+    div.cart {
+        
+     
+        height: 1%;
+        left: 30px;
+        top: 7%;
+    }
+    div.savings {
+        top: 12%;
+        height: 22px;
+    }
+    div.bill {
+        top: 85%;
+    }
+  }
+  @media screen and (max-width: 824px) {
+    div.savings {
+        top: 10%;
+        height: 28px;
+    }
+    div.celeb_container {
+    top: 13%;
+    }
+    div.card_container {
+    top: 280px;
+    }
+    div.card2_container {
+    top: 520px;
+    }
+    div.bill {
+        top: 55%;
+    }
+    div.pay_container {
+    top: 25%;
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    div.savings {
+        top: 13%;
+        height: 26px;
+        width: 80%
+    }
+    div.celeb_container {
+        top: 17%;
+        width: 80%
+    }
+    div.card_container {
+        top: 250px;
+        width: 80%
+    }
+    div.card2_container {
+        top: 580px;
+        width: 80%
+    }
+    div.gift_container {
+        top: 1000px;
+        width: 80%;
+        left: 50px;
+    }
+    div.pay_container {
+        width: 80%;
+        left: 50px;
+        top: 1150px;
+    }
+    div.bill {
+        width: 80%;
+        left: 50px;
+        top: 1420px;
+    }
+  }
+
+  @media screen and (max-width: 415px) {
+    div.cart {
+        left: 20px;
+    }
+    div.savings {
+        left: 20px;
+        top: 13%;
+        height: 26px;
+        width: 80%
+    }
+    div.celeb_container {
+        top: 18%;
+        width: 80%;
+        left: 20px;
+    }
+    div.card_container {
+        top: 280px;
+        width: 80%;
+        left: 20px;
+    }
+    div.card2_container {
+        top: 580px;
+        width: 80%;
+        left: 20px;
+    }
+    div.gift_container {
+        top: 1600px;
+        width: 80%;
+        left: 50px;
+        left: 20px;
+    }
+    div.pay_container {
+        width: 80%;
+        left: 50px;
+        top: 1750px;
+        left: 20px;
+    }
+    div.bill {
+        width: 80%;
+        left: 50px;
+        top: 2030px;
+        left: 20px;
+    }
+    div.celeb_buttons button {
+        margin: 2px;
+    }
+    div.card2_container div.list {
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+    }
+  }
