@@ -6,95 +6,105 @@
     box-sizing: border-box;
 }
 
-
-nav {
-    background-color: .2136D4;
-    position: absolute;
+.container {
     width: 100%;
-    height: 7%;
-    left: 0px;
+    position: absolute;
     top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
 }
 
+header {
+    background-color: #2136D4;
+    height: 5vh;
+    width: 100%;
+}
+
+.main {
+  
+    width: 95%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    position: absolute;
+    top:5vh;
+}
+
+.left {
+    width: 60%;
+  
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart {
+width: 100%;
+height: 5%;
+display: flex;
+flex-direction: row;
+}
 .left_arrow {
-    margin-top: 5px;
-width: 16px;
-height: 16px;
+    margin: 0.5rem;
+width: 1rem;
+height: 1rem;
 cursor: pointer;
 }
 
-div.cart {
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    width: 174px;
-    height: 2%;
-    left: 30px;
-    top: 8%;
-}
-
-div.cart p {
-    margin: 2px;;
-}
-div.cart p span{
+div.cart_message p span{
     font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
-font-size: 26px;
+font-size: 1.625rem;
 
 color: #000000;
 }
-
-div.savings {
-    position: absolute;
+.savings{
+    height: 5%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-width: 50%;
-height: auto;
-left: 50px;
-top: 13%;
-
+   
 background: #F0F5FE;
 border-radius: 8px;
 }
-
 div.savings p {
-    margin: 5px;
+    margin: 0.5rem;
     color:#2136D4;
+    font-size: 1.2rem;
 }
-div.celeb_container {
-    box-sizing: border-box;
+.celeb_container {
+    height: 10%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-position: absolute;
-width: 50%;
-height: auto;
-left: 50px;
-top: 17%;
-
-border: 0.5px solid #D9D9D9;
-border-radius: 0px 0px 10px 10px;
+    border: 0.5px solid #D9D9D9;
+    border-radius: 0px 0px 10px 10px;
 }
 div.celeb p:first-of-type{
     font-family: 'Roboto';
 font-style: normal;
 font-weight: 600;
-font-size: 22px;
-line-height: 26px;
+font-size: 1.675rem;
 color: #323232;
-
+margin-left: 0.5rem;
 }
 
 div.celeb p:last-of-type {
     font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
-font-size: 12px;
-line-height: 14px;
+font-size: 0.75rem;
+line-height: 0.875rem;
 /* identical to box height */
-
+margin: 0.5rem 0.5rem;
 text-align: center;
 
 color: #A6A6A6;
@@ -107,7 +117,7 @@ div.celeb_buttons {
     width :auto;
 }
 div.celeb_buttons button {
-    margin: 10px;
+    margin: 0.625rem;
 }
 div.celeb_buttons button:first-of-type{
     border: 0.2px solid #2136D4;
@@ -119,9 +129,9 @@ div.celeb_buttons button:first-of-type p{
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 600;
-font-size: 16px;
-line-height: 19px;
-margin: 10px;
+font-size: 1rem;
+line-height: 1.1875rem;
+margin: 0.625rem;
 
 color: #2136D4;
 
@@ -135,35 +145,31 @@ div.celeb_buttons button:last-of-type p {
     font-family: 'Roboto';
 font-style: normal;
 font-weight: 600;
-font-size: 16px;
-line-height: 19px;
+font-size: 1rem;
+line-height: 1.1875rem;
 text-align: center;
-margin: 10px;
+margin: 0.625rem;
 color: #323232;
 
 }
-
-div.card_container {
-    box-sizing: border-box;
-
-position: absolute;
-width: 50%;
-height: auto;
-left: 50px;
-top: 210px;
-
-border: 0.5px solid #D9D9D9;
-border-radius: 25px;
+.card_container {
+    height: 24%;
+    width: 100%;
+    border: 0.5px solid #D9D9D9;
+    border-radius: 25px;
 }
+
+
+
 
 div.card {
     display: flex;
     flex-direction: row;
-
+    height: 80%;
 }
 div.card img:first-child {
     border-radius: 12.5px;
-    width: 16%;
+    height: 100%;
 }
 div.card_details {
     width: 75%;
@@ -174,14 +180,14 @@ div.card_footer {
     justify-content: space-between;
 }
 div.card_footer p {
-    margin: 10px;
+    margin: 0.625rem;
 }
 div.card_footer p:first-of-type {
     font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
-font-size: 18px;
-line-height: 22px;
+font-size: 1.125rem;
+/* line-height: 22px; */
 
 color: #0F0F0F;
 }
@@ -190,31 +196,31 @@ div.card_footer p:last-of-type {
     font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
-font-size: 18px;
-line-height: 22px;
+font-size: 1.125rem;
+/* line-height: 22px; */
 text-align: center;
 
 color: #2136D4;
 
 }
-div.card_details div:first-of-type {
+div.card_details_header {
+    height: 33.33;
+
     display: flex;
     flex-direction: row;
-    margin: 5px;
-    width: 100%;
+    margin: 0.3125rem;
     justify-content: space-between;
 }
 div.card_details div:first-of-type img {
-    padding:10px;
-    width: 40px;
+    width: 1.2rem;
+    margin-right: 0.5rem;
 }
 div.card_title {
     
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 600;
-font-size: 18px;
-line-height: 100%;
+font-size: 1.125rem;
 /* or 28px */
 
 
@@ -225,17 +231,17 @@ color: #323232;
 div.card_details div:nth-child(2) {
     display: flex;
     flex-direction: row;
-    margin: 10px;
+    margin: 0.525rem;
+    height: 33.33%;
 }
 div.card_details div:nth-child(2) p {
-    margin: 10px;
+    margin: 0.625rem;
 }
 div.card_details div:nth-child(2) p:nth-child(1) {
     font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
-font-size: 18px;
-line-height: 22px;
+font-size: 1.125rem;
 /* or 120% */
 
 display: flex;
@@ -249,8 +255,7 @@ div.card_details div:nth-child(2) p:nth-child(2) {
     font-family: 'Roboto';
 font-style: normal;
 font-weight: 300;
-font-size: 18px;
-line-height: 22px;
+font-size: 1.125rem;
 /* or 147% */
 
 display: flex;
@@ -265,8 +270,7 @@ div.card_details div:nth-child(2) p:nth-child(3) {
     font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
-font-size: 18px;
-line-height: 22px;
+font-size: 1.125rem;
 /* or 132% */
 
 display: flex;
@@ -277,38 +281,37 @@ color: #00A807;
 }
 
 div.card_details div:nth-child(3) {
-    margin: 10px;
+    margin: 0.625rem;
+    height: 33.33%;
 }
 
 div.card_details div:nth-child(3) p span{
     font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
-font-size: 18px;
-line-height: 21px;
+font-size: 1.125rem;
 
 color: #323232;
 
 }
+div.card_footer {
+    border: 0.5px solid #D9D9D9;
+    border-radius: 0 0 25px 25px;
+    height: 20%;
+}
 
-div.card_footer p:nth-child(1) img {
+.one_img p {
     font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
-font-size: 18px;
-line-height: 22px;
-
+font-size: 1.125rem;
 color: #FFFFFF;
 }
 
-div.card2_container {
-    box-sizing: border-box;
-
-position: absolute;
-width: 50%;
-height: auto;
-left: 50px;
-top: 425px;
+.card2_container{
+    height: 45%;
+    width: 100%;
+    margin-top: 5.5%;
 
 border: 0.5px solid #D9D9D9;
 border-radius: 25px;
@@ -318,19 +321,19 @@ border-radius: 25px;
 div.card2_container div.card2_title {
     display: flex;
     flex-direction: row;
-    padding: 5px;
+    padding: 0.3125px;
+    height: 20%;
 }
 div.card2_container div.card2_title img.face {
-    margin: 5px;
-    width: 25px;
+    margin: 0.3125rem;
+    width: 1.625rem;
 }
 div.card2_container div.card2_title p {
-    margin: 5px;
+    margin: 0.3125rem;
     font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
-font-size: 18px;
-line-height: 21px;
+font-size: 1.125rem;
 text-align: center;
 text-transform: capitalize;
 
@@ -339,18 +342,17 @@ color: #505960;
 div.card2_container div:nth-child(2) button {
     background-color: #ffffff;
     border-radius: 15px;
-    padding: 4px;
+    padding: 0.3125rem;
     font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
-font-size: 13px;
-line-height: 16px;
+font-size: 0.8125rem;
 text-align: center;
 text-transform: capitalize;
 
 color: #979797;
 
-margin: 5px;
+margin: 0.3125rem;
 } 
 div.card2_container div:nth-child(2) button:nth-child(1) {
     background: #2136D4;
@@ -358,40 +360,48 @@ border-radius: 15px;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
-font-size: 13px;
-line-height: 16px;
+font-size: 0.8125rem;
 /* identical to box height */
 
 text-align: center;
 text-transform: capitalize;
 
 color: #FFFFFF;
-padding: 4px;
+padding: 0.3125rem;
 
 }
 
 div.card2_container div.list {
     display: flex;
     flex-direction: row;
-    margin: 5px;
+    margin: 0.3125rem;
+   height: 80%;
+}
+div.list_display {
+    width: 25%;
+    height: 90%;
 }
 div.card2_container div.list img {
-    width: 120px;
+    height: 45%;
 }
-div.card2_container div.list div {
+div.list_display {
     display: flex;
     flex-direction: column;
-    margin: 5px;
+    margin: 0.3125rem;
     border: 0.5px solid #D9D9D9;
 border-radius: 6.1244px;
 box-sizing: border-box;
+}
+div.price {
+    border: 0.5px solid #D9D9D9;
+    border-radius: 6.1244px;
+    height: 15%;
 }
 div.card2_container div.list div p {
     font-family: 'Roboto';
 font-style: normal;
 font-weight: 00;
-font-size: 16px;
-line-height: 116.19%;
+font-size: 1rem;
 /* or 19px */
 
 
@@ -402,15 +412,14 @@ div.price {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 5px;
+    margin: 0.325rem;
 }
 
 div.Add {
     font-family: 'Roboto';
 font-style: normal;
 font-weight: 550;
-font-size: 16px;
-line-height: 152.19%;
+font-size: 1rem;
 /* identical to box height, or 30px */
 
 letter-spacing: 0.06em;
@@ -418,30 +427,33 @@ letter-spacing: 0.06em;
 color: #2136D4;
 
 }
+.right {
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
 
 div.gift_container {
-    position: absolute;
-width: 30%;
-height: auto;
-left: 60%;
-top: 11%;
+width: 95%;
+height: 18%;
 background: #F0F5FE;
 border-radius: 8px;
+margin-left: 2%;
 }
 
 div.offer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 5px;
+    padding: 0.325rem;
 }
 
 div.offer div p:first-of-type {
     font-family: 'Inter';
 font-style: normal;
 font-weight: 700;
-font-size: 16px;
-line-height: 19px;
+font-size: 1rem;
 
 color: #000000;
 
@@ -450,8 +462,7 @@ div.offer div p:last-of-type {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 1rem;
     
     color: #2136D4;
        
@@ -462,19 +473,18 @@ div.offer_pic {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 5px;
+    padding: 0.325rem;
 }
 div.offer_pic div:nth-child(2) {
     display: flex;
     flex-direction: column;
-    padding: 2px;;
+    padding: 0.325rem;
 }
 div.offer_pic div:nth-child(2) p:first-of-type {
     font-family: 'Inter';
 font-style: normal;
 font-weight: 500;
-font-size: 12px;
-line-height: 15px;
+font-size: 1rem;
 /* identical to box height */
 
 
@@ -485,8 +495,7 @@ div.offer_pic div:nth-child(2) p:last-of-type {
     font-family: 'Inter';
 font-style: normal;
 font-weight: 500;
-font-size: 12px;
-line-height: 15px;
+font-size: 1rem;
 /* identical to box height */
 
 
@@ -499,23 +508,18 @@ div.locked {
 border-radius: 5px;
 display: flex;
 flex-direction: row;
-height: auto;
+height: 50%;
 }
 div.locked img,p {
-    margin: 5px;
+    margin: 0.325rem;
 }
-
 div.pay_container {
-    box-sizing: border-box;
-
-position: absolute;
-width: 30%;
-height: auto;
-left: 60%;
-top: 35%;
-
+    margin-top: 2%;
+width: 95%;
+height: 33%;
 border: 0.5px solid #D9D9D9;
 border-radius: 25px;
+margin-left: 2%;
 }
 
 div.pay_container div:nth-child(1) p span {
@@ -523,8 +527,7 @@ div.pay_container div:nth-child(1) p span {
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
-font-size: 20px;
-line-height: 110.5%;
+font-size: 1.05rem;
 /* or 22px */
 
 text-transform: uppercase;
@@ -535,21 +538,28 @@ color: #101010;
 div.empty {
     background: #F0F5FE;
 border-radius: 8px;
-height: 30px;
+height: 1.675rem;
 }
-
+div.line p {
+    font-family: 'Roboto';
+    color: #2136D4;
+}
+div.line_icon {
+    display: flex;
+    flex-direction: row;
+}
 div.pay_container div:nth-child(6) {
     background: #2136D4;
-    border-radius: 8px;
+    border-radius: 25px;
     align-items: center;
     text-align: center;
+    height: 13%;
 }
 div.pay_container div:nth-child(6) p {
     font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
-font-size: 24px;
-line-height: 28px;
+font-size: 1.5rem;
 text-transform: uppercase;
 
 color: #FFFFFF;
@@ -560,8 +570,8 @@ div.change {
     font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
-font-size: 14px;
-line-height: 16px;
+font-size: 1.25rem;
+
 
 color: #2136D4;
 
@@ -572,20 +582,18 @@ div.line {
     justify-content: space-between;
     margin: 3px;
 }
-
 div.bill {
-    box-sizing: border-box;
-
-position: absolute;
-width: 30%;
-height: auto;
-left: 60%;
-top: 70%;
-padding: 5px;
-border: 0.5px solid #D9D9D9;
-border-radius: 25px;
+    width: 95%;
+    height: 33%;
+    padding: 5px;
+    border: 0.5px solid #D9D9D9;
+    border-radius: 25px;
+    margin-top: 2rem;
+    margin-left: 2%;
 }
-
+div.bill p {
+    font-size: 1rem;
+}
 div.bill div:first-of-type {
     background: #F0F5FE;
 border: 0.5px solid #FFFFFF;
@@ -598,8 +606,7 @@ div.bill div:first-of-type p {
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
-font-size: 16px;
-line-height: 19px;
+font-size: 1rem;
 
 color: #2136D4;
 
@@ -615,8 +622,7 @@ div.bill div:last-of-type b {
     font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
-font-size: 16px;
-line-height: 19px;
+font-size: 1rem;
 text-transform: lowercase;
 text-align: center;
 color: #000000;
@@ -626,134 +632,43 @@ padding-top: 8px;
 div.bill div:last-of-type b,img {
     margin : 3px;
 }
-@media screen and (max-width: 1025px) {
-    .left_arrow {
-        margin-top: 9px;
-    width: 13px;
-    height: 13px;
-    cursor: pointer;
-    }
-    div.cart {
-        
-     
-        height: 1%;
-        left: 30px;
-        top: 7%;
-    }
-    div.savings {
-        top: 12%;
-        height: 22px;
-    }
-    div.bill {
-        top: 85%;
-    }
-  }
-  @media screen and (max-width: 824px) {
-    div.savings {
-        top: 10%;
-        height: 28px;
-    }
-    div.celeb_container {
-    top: 13%;
-    }
-    div.card_container {
-    top: 280px;
-    }
-    div.card2_container {
-    top: 520px;
-    }
-    div.bill {
-        top: 55%;
-    }
-    div.pay_container {
-    top: 25%;
-    }
-  }
 
-  @media screen and (max-width: 550px) {
-    div.savings {
-        top: 13%;
-        height: 26px;
-        width: 80%
+@media screen and (max-width: 860px) {
+    html {
+        font-size: 13px;
     }
-    div.celeb_container {
-        top: 17%;
-        width: 80%
+}
+@media screen and (max-width: 730px) {
+    html {
+        font-size: 11px;
     }
-    div.card_container {
-        top: 250px;
-        width: 80%
+}
+@media screen and (max-width: 630px) {
+    html {
+        font-size: 10px;
     }
-    div.card2_container {
-        top: 580px;
-        width: 80%
-    }
-    div.gift_container {
-        top: 1000px;
-        width: 80%;
-        left: 50px;
-    }
-    div.pay_container {
-        width: 80%;
-        left: 50px;
-        top: 1150px;
-    }
-    div.bill {
-        width: 80%;
-        left: 50px;
-        top: 1420px;
-    }
-  }
-
-  @media screen and (max-width: 415px) {
-    div.cart {
-        left: 20px;
-    }
-    div.savings {
-        left: 20px;
-        top: 13%;
-        height: 26px;
-        width: 80%
-    }
-    div.celeb_container {
-        top: 18%;
-        width: 80%;
-        left: 20px;
-    }
-    div.card_container {
-        top: 280px;
-        width: 80%;
-        left: 20px;
-    }
-    div.card2_container {
-        top: 580px;
-        width: 80%;
-        left: 20px;
-    }
-    div.gift_container {
-        top: 1600px;
-        width: 80%;
-        left: 50px;
-        left: 20px;
-    }
-    div.pay_container {
-        width: 80%;
-        left: 50px;
-        top: 1750px;
-        left: 20px;
-    }
-    div.bill {
-        width: 80%;
-        left: 50px;
-        top: 2030px;
-        left: 20px;
-    }
-    div.celeb_buttons button {
-        margin: 2px;
-    }
-    div.card2_container div.list {
-        display: flex;
+    div.main {
         flex-direction: column;
-        margin: 5px;
     }
-  }
+    div.left {
+        width: 95%;
+        height: auto;
+    }
+    div.right {
+        height: auto;
+        width: 95%;
+    }
+    div.pay_container {
+        height:auto;
+        margin-top: 2rem;
+    }
+    div.bill {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    html {
+        font-size: 8px;
+    }
+}
